@@ -2,7 +2,7 @@ package RecursionPractice;
 
 public class fibo_recursion {
     public static void main(String[] args) {
-        int n = 5;
+        int n = 3;
         System.out.println(fib(n));
     }
     public static int fib(int n){
@@ -10,9 +10,7 @@ public class fibo_recursion {
             return n;
         }
 
-
-        int f1 = fib(n-1);
-        int f2 = fib(n-2);
-        return f1 + f2;
+        int c = n*(n+1)/2;
+        return c;
     }
 }
